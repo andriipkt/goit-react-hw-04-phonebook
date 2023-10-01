@@ -1,0 +1,15 @@
+ul {
+  list-style: none;
+}
+
+.contactsTitle {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.filterInput {
+  width: 250px;
+  height: 32px;
+
+  margin-bottom: 20px;
+}
