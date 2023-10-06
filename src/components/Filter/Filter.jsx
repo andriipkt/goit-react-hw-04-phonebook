@@ -1,7 +1,7 @@
 import css from './Filter.module.css';
 import PropTypes from 'prop-types';
 
-function Filter({ handleFilter, filter }) {
+function Filter({ handleFilter, value }) {
   return (
     <div>
       <h2 className={css.contactsTitle}>Contacts</h2>
@@ -10,7 +10,7 @@ function Filter({ handleFilter, filter }) {
         className={`form-control ${css.filterInput}`}
         name="filter"
         onChange={handleFilter}
-        value={filter}
+        value={value}
       />
     </div>
   );
@@ -20,5 +20,5 @@ export default Filter;
 
 Filter.propTypes = {
   handleFilter: PropTypes.func.isRequired,
-  filter: PropTypes.string.isRequired,
+  value: PropTypes.string.isRequired,
 };
